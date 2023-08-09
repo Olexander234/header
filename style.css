@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+.box {
+    width: 600px;
+    height: 400px;
+    border: 3px solid #000;
+    margin: 100px auto;
+    position: relative;
+    overflow: hidden;
+    transform: 0.5s;
+    -webkit-transform: 0.5s;
+    -moz-transform: 0.5s;
+    -ms-transform: 0.5s;
+    -o-transform: 0.5s;
+}
+
+
+
+.box:hover .box-inside {
+    right: 50%;
+}
+
+
+
+.box-inside {
+    width: 150px;
+    height: 150px;
+    background-color: brown;
+    position: absolute;
+    top: 200px;
+    right: 30%;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.message {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    background-color: rgb(16, 125, 72);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 50px;
+    cursor: pointer;
+    transition: 0.5s;
+    overflow: hidden;
+    bottom: 50px;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.message:hover {
+    height: 240px;
+    border-radius: 20px;
+    background-color: burlywood;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.message:hover .message-coment {
+    top: 30px;
+}
+
+.message-coment {
+    color: blue;
+    position: absolute;
+    top: -30px;
+}
+
+
+.message-icon {
+    font-size: 45px;
+    color: #281d6a;
+}
+
+.audio-player {
+    width: 100px;
+    height: 90px;
+    border-radius: 50px;
+    background-color: rgb(74, 27, 129);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+
+
+
+.audio-player-icon {
+    color: #000;
+    font-size: 45px;
+
+}
